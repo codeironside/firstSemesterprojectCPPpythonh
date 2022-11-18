@@ -8,13 +8,13 @@ from pygame import mixer
 import serial
 import time
 import re
-from time import  sleep
+from time import 
 
 screen_height = 1080
 screen_width = 1920
 display_size = (screen_width, screen_height)
-""" 
-arduino = serial.Serial('COM5', 9600,timeout=1)
+
+arduino = serial.Serial('COM40', 9600,timeout=1)
 
 
 
@@ -34,7 +34,7 @@ def sensor_value():
     right_sensor = all_sensor[0]
 
 
-    return int(left_sensor), int(right_sensor) """
+    return int(left_sensor), int(right_sensor) 
 
 
 pygame.init()
@@ -159,7 +159,7 @@ while run:
 
 
     ### the ultrasonic values
-    """ sensorTime = pygame.time.get_ticks()
+    sensorTime = pygame.time.get_ticks()
     pevSensorTime = 0
 
 
@@ -182,8 +182,7 @@ while run:
     if not left and  not right:
         moving_left = False
         moving_right = False
- """
-
+ 
 
 
 
